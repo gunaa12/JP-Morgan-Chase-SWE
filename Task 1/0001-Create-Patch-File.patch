@@ -1,0 +1,284 @@
+From 81a85626533e06a3daee2275fc24f1ea5a716f64 Mon Sep 17 00:00:00 2001
+From: Guna <gunavikasavula@gmail.com>
+Date: Sun, 28 Nov 2021 09:13:27 -0500
+Subject: [PATCH] Create Patch File
+
+---
+ .idea/.gitignore                              |   3 ++
+ .idea/JPMC-tech-task-1-py3.iml                |  12 +++++++
+ .../inspectionProfiles/profiles_settings.xml  |   6 ++++
+ .idea/misc.xml                                |   4 +++
+ .idea/modules.xml                             |   8 +++++
+ .idea/vcs.xml                                 |   6 ++++
+ __pycache__/client3.cpython-37.pyc            | Bin 0 -> 1121 bytes
+ __pycache__/client_test.cpython-37.pyc        | Bin 0 -> 1483 bytes
+ client3.py                                    |  33 +++++-------------
+ client_test.py                                |  14 ++++++++
+ server3.py                                    |  20 -----------
+ 11 files changed, 62 insertions(+), 44 deletions(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/JPMC-tech-task-1-py3.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 __pycache__/client3.cpython-37.pyc
+ create mode 100644 __pycache__/client_test.cpython-37.pyc
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..26d3352
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+diff --git a/.idea/JPMC-tech-task-1-py3.iml b/.idea/JPMC-tech-task-1-py3.iml
+new file mode 100644
+index 0000000..8b8c395
+--- /dev/null
++++ b/.idea/JPMC-tech-task-1-py3.iml
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="PyDocumentationSettings">
++    <option name="format" value="PLAIN" />
++    <option name="myDocStringFormat" value="Plain" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+index 0000000..105ce2d
+--- /dev/null
++++ b/.idea/inspectionProfiles/profiles_settings.xml
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000..a2e120d
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..c2eb5cf
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/JPMC-tech-task-1-py3.iml" filepath="$PROJECT_DIR$/.idea/JPMC-tech-task-1-py3.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/__pycache__/client3.cpython-37.pyc b/__pycache__/client3.cpython-37.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..3c39829bfa8ed6b238f9ea2e9ec7cce77ee20f64
+GIT binary patch
+literal 1121
+zcmYjQ&2Aev5GHrItCcLdssGhn*aAT-ppM-JC=4NK)7VLY0yUfjK~O@)Vl9sBjaR!e
+zNd>VYpVVU?Lhh{((O2l9M_zl%y{Dcsr0k$vaDK?y*>Ap?ebj0-2(JF0zh_@Zg#6>2
+zn^i~SA#VLQ3P~g_h@f5vBJesCq1Q|>8Hh-RB9=@>zY<ZCv8<s^pe~cMK>hXRH)y~T
+z#4|dh2jrKjXhJw|0e!VR{|KV_EnstYMXu--oqz1KSjmZ4eX|EE7`-djpayF*+GAo}
+zY=}*<1zWHR>-Pz?WgXUG12$o6z&6N?QgS|h>CPLFz^Yto6O_$1nFZIkhcB^~=cLnm
+zhjo#|$)~5rjJi8JMb*!W(@LA}-tOM+&iNSB#do=U@b)tQmm){F{X(7y!@ZANKSVLb
+zd~I?`jkAI_ks*GKUIyN0AN+6{Ov6ngqub<?O{w#yY`_pnJn8ZyRmpK5cvcj=8gO$8
+zyabRS`RlA0gXX5<Cs2aQ3<hzTnQT<$rQtTxrs|*BnyE(VaV~8%Qh6U1ex}df1qiW2
+zZ8RvV%yc3fosTO6${pJ}zK|~B>lnK*m8<R#qLxto_sxE{_d<ixy_0d7z3v@=KEp5d
+zemweVf7?L+blc#I+h1*uF7EaEMGmF8cXxDQn<ron5af{q*~CoRPg<DJTlh4oYT;Sm
+zfpE)dw>_t8XiTZ3I5$lhJV#ci^fp1B!pUd+2QVBt$ScQ^N1kRpE9JF)%$4iYp$Fdy
+zMD04{#yIvD3*k`N1aUrd`PR|XF$%&G%BWiQw`n@e@-j^)pFef1Nq$H3%<wOex9%PN
+zCCA#m_MbtkGf8|ljI-hQkM?bN@c2pR6R|v2MUfxhRe*D)jffY%WhNhjV6SvlidbPC
+z)lfuFUp#*Hv!#cgqYpsJYzS#;S&q%K5yqZ?rKydutx}8HP39VAu0~MWcu=WfW-L>X
+zNgMmFYY}^-S|wPXp8@6mbLE=j`|ii5H2<T?je%Nlb$^IMTEMrCV$D$`)IT8$S&-C|
+RMiQ=29x~d%9w&4wcn{WR9Q6PI
+
+literal 0
+HcmV?d00001
+
+diff --git a/__pycache__/client_test.cpython-37.pyc b/__pycache__/client_test.cpython-37.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..98c19409d1fdd71346464292b096b96f939c08b2
+GIT binary patch
+literal 1483
+zcmdT^OK;Oa5MJAH;=KBXl7dPPTq2YxkG4^ws!E&mAp}(`ijb@n%Vf8y$+K$*+NeFX
+zJ;E>Op%o`CocR&u5BP>SMeqwaF=IESk3-?eN;96F*%^=L`_}W}aDc$tdH+#g^b+zN
+zH@)QnBM)NcKv6=48d32n)`YsKiUL_8RHB|kLOqPUkq#u)!(=K~MLx~QiT9KUkn@~G
+zy<NyBD^bA?RhU)OEq%3VG^{dudrJf(4`Mz5#fU0UqKZ_Y;vrEb_bsZ2%2>?~6lw-*
+zSnJHR$^sn6C4u0V6hO=mpfHz8$0CI+>UAt1RjB`1rU4o}kA!IWJkp1einuTAtnLX#
+zva!4`?vWE>347uJ2<?v$&;t=d2OVqZ!n)xbC3N^c+4P*kgtlj2!o;BKk(J8VGgwbw
+z<-3ody{Kr*EpC*V?J<oG>x`um$!si<iY1d1sZ=g8ol7U;Q<>D{RJ!u;=*QZZaY(E~
+zVy7<=PbRY2%;a=7lgT7)X>Ps{m2IEZY-ze#wf&Y+hso&mmg{?MP+J6%O{-b1R(?XM
+zqbd|bbSul>IwPOoZRERau(PG&!XgiY#e=A1RDMuhL<c$!>ZZxKwXogRYuxck&_1he
+z+TQJU(_*GAJI_yq--V1{xk9e=0y4}}rQOiqmWs@*LYt*0tIrBCi<P%x7IYj-##+1S
+zQrQ7jgDO_MwQEnHp<U*SR@Q6fc1^d~Dh>|2GZj!o923T+fY5pThZphNvj02coNeSe
+zLKYQWT;Q^jzhVvd;mK>P;W)Uc?4Zl>-nfW|&_V)S(1iElu16Ezj|T>Nr>@b24?+O?
+z8^X9t4?c|c2&y}%kQS~Q1<Ov}2GhJjmpB8+`TCaLm@})`&Q;WB{sHwH<yPS4D4N#L
+z>rB(^fTq=(v|U3xq-jWVH^T2>-;s;vuYLx{pATYVA}ETW_?4jJ!_sx#XlPp0rz-7+
+zVd3|xK9}lgXGXTN4!(j8*96P(F;KP#vn~zGd7m>eWybAr7Jq!sAQT}a4n-8<H$$vw
+AnE(I)
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+index f1771c3..bba36e6 100644
+--- a/client3.py
++++ b/client3.py
+@@ -1,23 +1,3 @@
+-################################################################################
+-#
+-#  Permission is hereby granted, free of charge, to any person obtaining a
+-#  copy of this software and associated documentation files (the "Software"),
+-#  to deal in the Software without restriction, including without limitation
+-#  the rights to use, copy, modify, merge, publish, distribute, sublicense,
+-#  and/or sell copies of the Software, and to permit persons to whom the
+-#  Software is furnished to do so, subject to the following conditions:
+-#
+-#  The above copyright notice and this permission notice shall be included in
+-#  all copies or substantial portions of the Software.
+-#
+-#  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+-#  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+-#  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+-#  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+-#  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+-#  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+-#  DEALINGS IN THE SOFTWARE.
+-
+ import urllib.request
+ import time
+ import json
+@@ -35,14 +15,17 @@ def getDataPoint(quote):
+ 	stock = quote['stock']
+ 	bid_price = float(quote['top_bid']['price'])
+ 	ask_price = float(quote['top_ask']['price'])
+-	price = bid_price
++	price = (bid_price + ask_price) / 2
+ 	return stock, bid_price, ask_price, price
+ 
+ def getRatio(price_a, price_b):
+ 	""" Get ratio of price_a and price_b """
+ 	""" ------------- Update this function ------------- """
+ 	""" Also create some unit tests for this function in client_test.py """
+-	return 1
++	if (price_b == 0):
++		return
++	return price_a / price_b
++
+ 
+ # Main
+ if __name__ == "__main__":
+@@ -52,8 +35,10 @@ if __name__ == "__main__":
+ 		quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+ 		""" ----------- Update to get the ratio --------------- """
++		prices = {}
+ 		for quote in quotes:
+ 			stock, bid_price, ask_price, price = getDataPoint(quote)
+-			print ("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
++			prices[stock] = price
++			print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-		print ("Ratio %s" % getRatio(price, price))
++		print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
+diff --git a/client_test.py b/client_test.py
+index af2bf26..994e14e 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -8,6 +8,8 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'], ((quote['top_bid']['price'] + quote['top_ask']['price']) / 2)))
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+@@ -15,9 +17,21 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'], ((quote['top_bid']['price'] + quote['top_ask']['price']) / 2)))
++
+ 
+ 
+   """ ------------ Add more unit tests ------------ """
++  # def test_getRatio(self):
++  #   quotes = [
++  #     {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453',
++  #      'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++  #     {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453',
++  #      'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++  #   ]
++  #   for quote in quotes:
++  #     if ()
+ 
+ 
+ 
+diff --git a/server3.py b/server3.py
+index 2de4e28..464cb40 100644
+--- a/server3.py
++++ b/server3.py
+@@ -1,23 +1,3 @@
+-################################################################################
+-#
+-#  Permission is hereby granted, free of charge, to any person obtaining a
+-#  copy of this software and associated documentation files (the "Software"),
+-#  to deal in the Software without restriction, including without limitation
+-#  the rights to use, copy, modify, merge, publish, distribute, sublicense,
+-#  and/or sell copies of the Software, and to permit persons to whom the
+-#  Software is furnished to do so, subject to the following conditions:
+-#
+-#  The above copyright notice and this permission notice shall be included in
+-#  all copies or substantial portions of the Software.
+-#
+-#  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+-#  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+-#  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+-#  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+-#  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+-#  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+-#  DEALINGS IN THE SOFTWARE.
+-
+ #from itertools import izip
+ from random    import normalvariate, random
+ from datetime  import timedelta, datetime
+-- 
+2.22.0.windows.1
+
